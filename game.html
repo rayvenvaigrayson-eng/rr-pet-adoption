@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flappy Dog - R&R Pet Adoption</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background: skyblue;
+}
+
+#dog {
+    font-size: 60px;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+#score {
+    font-size: 30px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🐶 Flappy Dog 🐶</h1>
+
+<div id="score">Score: 0</div>
+<div id="highscore">High Score: 0</div>
+
+<div id="dog">🐶</div>
+
+<script>
+let score = 0;
+
+let highScore = localStorage.getItem("highScore") || 0;
+document.getElementById("highscore").innerText =
+"High Score: " + highScore;
+
+document.body.addEventListener("click", () => {
+    score++;
+    document.getElementById("score").innerText =
+    "Score: " + score;
+
+    if(score > highScore){
+        highScore = score;
+        localStorage.setItem("highScore", highScore);
+
+        document.getElementById("highscore").innerText =
+        "High Score: " + highScore;
+    }
+});
+</script>
+
+</body>
+</html>
