@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R&R Pet Adoption</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#ff8c00;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    color:white;
+}
+
+header h1{
+    font-size:60px;
+}
+
+header p{
+    font-size:24px;
+}
+
+nav{
+    background:#ff4f9a;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+.slider{
+    background:#ffd6e7;
+    max-width:1200px;
+    margin:20px auto;
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.slider-text h2{
+    font-size:50px;
+    color:#ff4f9a;
+}
+
+.slider-text p{
+    font-size:24px;
+    margin-top:10px;
+}
+
+.slider button{
+    background:#ff4f9a;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.slider img{
+    width:400px;
+    border-radius:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.pets{
+    flex:2;
+}
+
+.sidebar{
+    flex:1;
+}
+
+.pet-card{
+    background:white;
+    border-radius:15px;
+    margin-bottom:20px;
+    padding:15px;
+    display:flex;
+    gap:20px;
+}
+
+.pet-card img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.pet-info h3{
+    font-size:35px;
+}
+
+.pet-info p{
+    margin:10px 0;
+}
+
+.adopt-btn{
+    background:#ff4f9a;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.box{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐾 R&R Pet Adoption 🐾</h1>
+    <p>Rescue. Rehome. Love.</p>
+</header>
+
+<nav>
+    <a href="#pets">Adoption</a>
+    <a href="#about">What We Are</a>
+    <a href="#how">How To Use</a>
+    <a href="#meet">Where To Meet Up</a>
+</nav>
+
+<div class="slider">
+    <div class="slider-text">
+        <h2>They're Waiting For You</h2>
+        <p>Rescued with love. Ready for a forever home.</p>
+        <button>Find Your New Best Friend</button>
+    </div>
+
+    <img src="hero.jpg" alt="Pet Photo">
+</div>
+
+<div class="container">
+
+<div class="pets" id="pets">
+
+<div class="pet-card">
+    <img src="kitten1.jpg" alt="Kitten">
+    <div class="pet-info">
+        <h3>🐱 Kitten</h3>
+        <p>Friendly • Playful • Loves cuddles</p>
+        <p><strong>Adoption Fee:</strong> $25</p>
+        <p><strong>Name chosen by adopter!</strong></p>
+        <button class="adopt-btn">Adopt Me</button>
+    </div>
+</div>
+
+<div class="pet-card">
+    <img src="puppy1.jpg" alt="Puppy">
+    <div class="pet-info">
+        <h3>🐶 Puppy</h3>
+        <p>Playful • Loyal • Great with people</p>
+        <p><strong>Adoption Fee:</strong> $25</p>
+        <p><strong>Name chosen by adopter!</strong></p>
+        <button class="adopt-btn">Adopt Me</button>
+    </div>
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<div class="box" id="about">
+    <h2>❤️ What We Are</h2>
+    <p>
+    We help rescued stray animals find loving homes.
+    Every adoption helps support more rescued pets.
+    </p>
+</div>
+
+<div class="box" id="how">
+    <h2>🐾 How To Use</h2>
+    <ol>
+        <li>Browse pets.</li>
+        <li>Choose a pet.</li>
+        <li>Contact us.</li>
+        <li>Meet the pet.</li>
+        <li>Take your new friend home.</li>
+    </ol>
+</div>
+
+<div class="box" id="meet">
+    <h2>📍 Where To Meet Up</h2>
+    <p>
+    Pickup only. A safe public meeting location will be arranged.
+    </p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    <h2>Thank you for helping pets find homes! 🐾</h2>
+</footer>
+
+</body>
+</html>
