@@ -32,7 +32,27 @@ body {
 
 <div id="dog">🐶</div>
 
-<script>
+<script><script>
+let dog = document.getElementById("dog");
+
+let y = 200;
+let velocity = 0;
+
+function gameLoop() {
+    velocity += 0.5; // gravity
+    y += velocity;
+
+    dog.style.top = y + "px";
+
+    requestAnimationFrame(gameLoop);
+}
+
+document.body.addEventListener("click", () => {
+    velocity = -8; // flap up
+});
+
+gameLoop();
+</script>
 let score = 0;
 
 let highScore = localStorage.getItem("highScore") || 0;
